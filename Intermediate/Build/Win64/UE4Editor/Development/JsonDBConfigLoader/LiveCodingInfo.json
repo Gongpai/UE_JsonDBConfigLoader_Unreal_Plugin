@@ -1,0 +1,21 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.JsonDBConfigLoader.cpp.obj": [
+			"FileInfo.cpp.obj",
+			"JsonDBConfigLoaderCommands.cpp.obj",
+			"JsonDBConfigLoaderStyle.cpp.obj",
+			"JsonInfo.cpp.obj",
+			"DatabaseInfo.cpp.obj",
+			"JsonDBConfigLoader.cpp.obj",
+			"JsonDBConfigLoaderManager.cpp.obj"
+		],
+		"Module.JsonDBConfigLoader.gen.cpp.obj": [
+			"DatabaseInfo.gen.cpp.obj",
+			"FileInfo.gen.cpp.obj",
+			"JsonDBConfigLoader.init.gen.cpp.obj",
+			"JsonDBConfigLoaderManager.gen.cpp.obj",
+			"JsonInfo.gen.cpp.obj"
+		]
+	}
+}

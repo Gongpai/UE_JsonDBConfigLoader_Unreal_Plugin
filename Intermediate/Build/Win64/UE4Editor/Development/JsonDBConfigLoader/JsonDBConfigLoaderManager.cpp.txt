@@ -1,0 +1,28 @@
+D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Development\JsonDBConfigLoader\Definitions.JsonDBConfigLoader.h
+D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\JsonDBConfigLoaderManager.h
+D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\DatabaseInfo.h
+D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader\DatabaseInfo.generated.h
+D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\FileInfo.h
+D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader\FileInfo.generated.h
+D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\JsonInfo.h
+D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader\JsonInfo.generated.h
+D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader\JsonDBConfigLoaderManager.generated.h
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\INCLUDE\vector
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\INCLUDE\__msvc_bit_utils.hpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\INCLUDE\__msvc_sanitizer_annotate_container.hpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\INCLUDE\xmemory
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\INCLUDE\limits
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\INCLUDE\cfloat
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\INCLUDE\cwchar
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\INCLUDE\cstdio
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\INCLUDE\xutility
+D:\Program Files\UE_4.27\Engine\Source\Developer\DesktopPlatform\Public\DesktopPlatformModule.h
+D:\Program Files\UE_4.27\Engine\Source\Developer\DesktopPlatform\Public\IDesktopPlatform.h
+D:\Program Files\UE_4.27\Engine\Source\Runtime\Json\Public\Dom/JsonObject.h
+D:\Program Files\UE_4.27\Engine\Source\Runtime\Json\Public\JsonGlobals.h
+D:\Program Files\UE_4.27\Engine\Source\Runtime\Json\Public\Serialization/JsonTypes.h
+D:\Program Files\UE_4.27\Engine\Source\Runtime\Json\Public\Dom/JsonValue.h
+D:\Program Files\UE_4.27\Engine\Source\Runtime\Core\Public\Misc/FileHelper.h
+D:\Program Files\UE_4.27\Engine\Source\Runtime\Json\Public\Serialization/JsonSerializer.h
+D:\Program Files\UE_4.27\Engine\Source\Runtime\Json\Public\Serialization/JsonReader.h
+D:\Program Files\UE_4.27\Engine\Source\Runtime\Json\Public\Serialization/JsonWriter.h
