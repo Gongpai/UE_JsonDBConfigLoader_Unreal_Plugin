@@ -25,13 +25,8 @@ public class JsonDBConfigLoader : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core",
-				"DesktopPlatform",
-				"Slate", 
-				"SlateCore",
-				"Json",
-				"EditorStyle", 
-				"PropertyEditor"
+				"Core", 
+				"Engine",
 				// ... add other public dependencies that you statically link with here ...
 			}
 			);
@@ -40,14 +35,10 @@ public class JsonDBConfigLoader : ModuleRules
 		PrivateDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Projects",
-				"InputCore",
-				"UnrealEd",
-				"ToolMenus",
 				"CoreUObject",
 				"Engine",
-				"OpenSSL",
-				"SSL"
+				"Slate",
+				"SlateCore",
 				// ... add private dependencies that you statically link with here ...	
 			}
 			);

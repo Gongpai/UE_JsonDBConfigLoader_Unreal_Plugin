@@ -32,28 +32,12 @@
 /wd4244
 /wd4838
 /I .
-/I "D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Private"
+/I "D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Private"
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime
-/I Runtime\Projects\Public
+/I Runtime\CoreUObject\Public
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
-/I Runtime\Json\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\InputCore
-/I Runtime\InputCore\Classes
-/I Runtime\InputCore\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
-/I Runtime\CoreUObject\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd
-/I Editor
-/I Programs\UnrealLightmass\Public
-/I Developer\Android\AndroidDeviceDetection\Public\Interfaces
-/I Editor\UnrealEd\Classes
-/I Editor\UnrealEd\Public
-/I Runtime\ApplicationCore\Public
-/I Runtime\RHI\Public
-/I Developer
-/I Developer\DirectoryWatcher\Public
-/I Editor\Documentation\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
@@ -61,8 +45,14 @@
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
 /I Runtime\Net\Core\Public
+/I Runtime\ApplicationCore\Public
+/I Runtime\RHI\Public
+/I Runtime\Json\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\SlateCore
 /I Runtime\SlateCore\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\InputCore
+/I Runtime\InputCore\Classes
+/I Runtime\InputCore\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Slate
 /I Runtime\Slate\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ImageWrapper
@@ -120,17 +110,16 @@
 /I Runtime\AudioMixerCore\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\PropertyAccess
 /I Runtime\PropertyAccess\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Kismet
-/I Editor\Kismet\Classes
-/I Editor\Kismet\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
-/I Runtime\ClothingSystemRuntimeInterface\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer
-/I Runtime\AudioMixer\Classes
-/I Runtime\AudioMixer\Public
-/I Developer\TargetPlatform\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AnimationCore
-/I Runtime\AnimationCore\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd
+/I Editor
+/I Programs\UnrealLightmass\Public
+/I Developer\Android\AndroidDeviceDetection\Public\Interfaces
+/I Editor\UnrealEd\Classes
+/I Editor\UnrealEd\Public
+/I Developer
+/I Developer\DirectoryWatcher\Public
+/I Editor\Documentation\Public
+/I Runtime\Projects\Public
 /I Runtime\SandboxFile\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\EditorStyle
 /I Editor\EditorStyle\Public
@@ -159,6 +148,10 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AudioEditor
 /I Editor\AudioEditor\Classes
 /I Editor\AudioEditor\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AudioMixer
+/I Runtime\AudioMixer\Classes
+/I Runtime\AudioMixer\Public
+/I Developer\TargetPlatform\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\LevelEditor
 /I Editor\LevelEditor\Public
 /I Developer\Settings\Public
@@ -200,6 +193,8 @@
 /I Runtime\TimeManagement\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MovieSceneTracks
 /I Runtime\MovieSceneTracks\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AnimationCore
+/I Runtime\AnimationCore\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\PropertyPath
 /I Runtime\PropertyPath\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem
@@ -232,12 +227,14 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AIModule
 /I Runtime\AIModule\Public
 /I Runtime\AIModule\Classes
-/I ThirdParty\OpenSSL\1.1.1k\include\Win64\VS2015
-/I Runtime\Online\SSL\Public
-/I "D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader"
-/I "D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source"
-/I "D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public"
-/I Developer\DesktopPlatform\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Kismet
+/I Editor\Kismet\Classes
+/I Editor\Kismet\Public
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
+/I Runtime\ClothingSystemRuntimeInterface\Public
+/I "D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader"
+/I "D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Source"
+/I "D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public"
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -263,16 +260,16 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
 /I "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"D:\Unreal Project\zombieproject\Intermediate\Build\Win64\ZombieProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/Yu"D:\Unreal Project\zombieproject\Intermediate\Build\Win64\ZombieProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h"
-/Fp"D:\Unreal Project\zombieproject\Intermediate\Build\Win64\ZombieProjectEditor\Development\UnrealEd\SharedPCH.UnrealEd.ShadowErrors.h.pch"
-"D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Development\JsonDBConfigLoader\Module.JsonDBConfigLoader.cpp"
-/FI"D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Development\JsonDBConfigLoader\Definitions.JsonDBConfigLoader.h"
-/Fo"D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Development\JsonDBConfigLoader\Module.JsonDBConfigLoader.cpp.obj"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22621.0\winrt"
+/FI"D:\Other Project\zombieproject\Intermediate\Build\Win64\ZombieProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"D:\Other Project\zombieproject\Intermediate\Build\Win64\ZombieProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"D:\Other Project\zombieproject\Intermediate\Build\Win64\ZombieProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Development\JsonDBConfigLoader\Module.JsonDBConfigLoader.cpp"
+/FI"D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Development\JsonDBConfigLoader\Definitions.JsonDBConfigLoader.h"
+/Fo"D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Development\JsonDBConfigLoader\Module.JsonDBConfigLoader.cpp.obj"
 /TP
 /GR-
 /W4

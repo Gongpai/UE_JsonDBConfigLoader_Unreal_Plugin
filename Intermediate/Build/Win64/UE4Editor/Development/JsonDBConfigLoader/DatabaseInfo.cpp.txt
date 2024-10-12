@@ -1,3 +1,0 @@
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Development\JsonDBConfigLoader\Definitions.JsonDBConfigLoader.h
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\DatabaseInfo.h
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader\DatabaseInfo.generated.h

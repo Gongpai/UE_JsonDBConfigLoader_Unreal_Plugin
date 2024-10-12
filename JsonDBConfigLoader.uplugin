@@ -17,6 +17,11 @@
 	"Modules": [
 		{
 			"Name": "JsonDBConfigLoader",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "JsonDBConfigLoaderEditor",
 			"Type": "Editor",
 			"LoadingPhase": "Default"
 		}

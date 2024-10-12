@@ -20,9 +20,9 @@ void EmptyLinkFunctionForGeneratedCodeJsonDBConfigLoader_init() {}
 				"/Script/JsonDBConfigLoader",
 				nullptr,
 				0,
-				PKG_CompiledIn | 0x00000040,
-				0x6F6417BF,
-				0xF572D7F1,
+				PKG_CompiledIn | 0x00000000,
+				0xC6B11F7F,
+				0x5EE6DAC4,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

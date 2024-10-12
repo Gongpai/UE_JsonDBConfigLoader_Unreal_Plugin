@@ -1,7 +1,8 @@
 ﻿#pragma once
 #include "DatabaseConfig.h"
+#include "Engine/DataTable.h"
 
-class FJsonDBConfigDataTable
+class JSONDBCONFIGLOADER_API FJsonDBConfigDataTable
 {
 public:
 	static void AddRowToDataTable(UDataTable* DataTable, FString& RowName, const FDatabaseConfig& DatabaseConfig);

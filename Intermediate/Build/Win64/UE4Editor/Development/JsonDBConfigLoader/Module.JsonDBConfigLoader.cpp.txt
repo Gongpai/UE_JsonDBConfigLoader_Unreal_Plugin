@@ -1,28 +1,18 @@
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Development\JsonDBConfigLoader\Definitions.JsonDBConfigLoader.h
-D:/Unreal Project/zombieproject/Plugins/JsonDBConfigLoader/Source/JsonDBConfigLoader/Private/FileInfo.cpp
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\FileInfo.h
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader\FileInfo.generated.h
-D:/Unreal Project/zombieproject/Plugins/JsonDBConfigLoader/Source/JsonDBConfigLoader/Private/JsonDBConfigLoaderCommands.cpp
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\JsonDBConfigLoaderCommands.h
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\JsonDBConfigLoaderStyle.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Styling/SlateStyle.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateBorderBrush.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateBoxBrush.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateColorBrush.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Brushes/SlateImageBrush.h
-D:/Unreal Project/zombieproject/Plugins/JsonDBConfigLoader/Source/JsonDBConfigLoader/Private/JsonDBConfigLoaderStyle.cpp
-D:\Program Files\UE_4.27\Engine\Source\Runtime\SlateCore\Public\Styling/SlateStyleRegistry.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\Engine\Public\Slate/SlateGameResources.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\Projects\Public\Interfaces/IPluginManager.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\Projects\Public\PluginDescriptor.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\Projects\Public\ModuleDescriptor.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\Json\Public\Serialization/JsonWriter.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\Json\Public\Serialization/JsonTypes.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\Projects\Public\CustomBuildSteps.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\Projects\Public\LocalizationDescriptor.h
-D:\Program Files\UE_4.27\Engine\Source\Runtime\Projects\Public\PluginReferenceDescriptor.h
-D:/Unreal Project/zombieproject/Plugins/JsonDBConfigLoader/Source/JsonDBConfigLoader/Private/JsonInfo.cpp
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\JsonInfo.h
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\DatabaseInfo.h
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader\DatabaseInfo.generated.h
-D:\Unreal Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader\JsonInfo.generated.h
+D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Development\JsonDBConfigLoader\Definitions.JsonDBConfigLoader.h
+D:/Other Project/zombieproject/Plugins/JsonDBConfigLoader/Source/JsonDBConfigLoader/Private/DatabaseConfig.cpp
+D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\DatabaseConfig.h
+D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader\DatabaseConfig.generated.h
+D:/Other Project/zombieproject/Plugins/JsonDBConfigLoader/Source/JsonDBConfigLoader/Private/JsonDBConfigDataTable.cpp
+D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\JsonDBConfigDataTable.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/DataTable.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\DataTableUtils.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DataTable.generated.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\GameplayTags\Classes\GameplayTagsManager.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\GameplayTags\Classes\GameplayTagContainer.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTags\GameplayTagContainer.generated.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTags\GameplayTagsManager.generated.h
+D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\JsonDBRow.h
+D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Intermediate\Build\Win64\UE4Editor\Inc\JsonDBConfigLoader\JsonDBRow.generated.h
+D:/Other Project/zombieproject/Plugins/JsonDBConfigLoader/Source/JsonDBConfigLoader/Private/JsonDBConfigLoader.cpp
+D:\Other Project\zombieproject\Plugins\JsonDBConfigLoader\Source\JsonDBConfigLoader\Public\JsonDBConfigLoader.h
+D:/Other Project/zombieproject/Plugins/JsonDBConfigLoader/Source/JsonDBConfigLoader/Private/JsonDBRow.cpp
