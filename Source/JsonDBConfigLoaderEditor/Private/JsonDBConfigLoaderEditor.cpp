@@ -833,7 +833,7 @@ void FJsonDBConfigLoaderEditorModule::AddJsonFileToDatabaseList(TArray<FString> 
 	
 	for (FString JsonFile : JsonFiles)
 	{
-		ShowNotification(FText::FromString("Add file to list : " + JsonFile), FName("Plus"));
+		ShowNotification(FText::FromString("Add file to list : " + JsonFile), FName("Plus"), true);
 		
 		TArray<FString> Paths;
 		
@@ -1065,11 +1065,11 @@ TSharedRef<FButtonInfo> FJsonDBConfigLoaderEditorModule::JsonFileButton(FString 
 	})
 	[
 	    SNew(SBox)
-	    .Padding(4)
+		.Padding(2)
 	    [
 	    	SNew(SImage)
-		    .Image(FEditorStyle::Get().GetBrush("Symbols.X"))
-		    .ColorAndOpacity(FLinearColor::Red)
+		    .Image(FAppStyle::Get().GetBrush("Icons.Delete"))
+		    .ColorAndOpacity(FLinearColor(1,0.25,0.25,1))
 	    ]
 	];
 	
@@ -1089,8 +1089,8 @@ TSharedRef<FButtonInfo> FJsonDBConfigLoaderEditorModule::JsonFileButton(FString 
 		.AutoWidth()
 		[
 			SNew(SBox)
-			.Padding(0)
-			.WidthOverride(35)
+			.Padding(2)
+			.WidthOverride(55)
 			[
 				DeleteButton.ToSharedRef()
 			]
@@ -1143,12 +1143,13 @@ TSharedPtr<SObjectPropertyEntryBox> FJsonDBConfigLoaderEditorModule::CreateDataT
 	return EntryBox;
 }
 
-void FJsonDBConfigLoaderEditorModule::ShowNotification(FText Message, FName MessageLog)
+void FJsonDBConfigLoaderEditorModule::ShowNotification(FText Message, FName MessageLog, bool isEditor)
 {
 	FNotificationInfo Info(Message);
 	Info.ExpireDuration = 15.0f;
 	Info.bFireAndForget = true;
-	Info.Image = FEditorStyle::Get().GetBrush(MessageLog);
+	
+	Info.Image = isEditor ? FEditorStyle::Get().GetBrush(MessageLog) : FAppStyle::Get().GetBrush(MessageLog);
 	
 	FSlateNotificationManager::Get().AddNotification(Info);
 }
@@ -1195,7 +1196,7 @@ void FJsonDBConfigLoaderEditorModule::RegisterMenus()
 void FJsonDBConfigLoaderEditorModule::OnButtonDelete(FString* FileName)
 {
 	UE_LOG(LogTemp, Warning, TEXT("Delete Now!!!!!!!!!!!!!!"));
-	ShowNotification(FText::FromString("Remove files from list : " + FString(*FileName)), "PropertyWindow.Button_RemoveFromArray");
+	ShowNotification(FText::FromString("Remove files from list : " + FString(*FileName)), "Icons.Minus", false);
 	JsonScrollListBox->RemoveSlot(JsonButtonLists[*FileName]->Box.ToSharedRef());
 	UE_LOG(LogTemp, Warning, TEXT("Current Slot Num : %d"), JsonScrollListBox->GetChildren()->Num());
 	JsonButtonLists.Remove(*FileName);

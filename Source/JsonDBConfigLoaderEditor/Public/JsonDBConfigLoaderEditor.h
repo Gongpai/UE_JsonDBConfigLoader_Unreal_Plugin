@@ -48,7 +48,7 @@ private:
 	UJsonDBConfigLoaderEditorManager* JsonDBCLManager;
 	TMap<FString, TSharedRef<FButtonInfo>> JsonButtonLists;
 	TSharedPtr<SObjectPropertyEntryBox> CreateDataTableEntryBox();
-	void ShowNotification(FText Message, FName MessageLog);
+	void ShowNotification(FText Message, FName MessageLog, bool isEditor);
 	void AddJsonFileToDatabaseList(TArray<FString> JsonFiles, FDatabaseInfo DatabaseInfo, bool isSave);
 	void AddJsonFileInList(FString FileName);
 	void OnSetCurrentJson(FString* FileName);
