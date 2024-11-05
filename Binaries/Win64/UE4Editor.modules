@@ -1,8 +1,0 @@
-{
-	"BuildId": "17155196",
-	"Modules": 
-	{
-		"JsonDBConfigLoader": "UE4Editor-JsonDBConfigLoader.dll",
-		"JsonDBConfigLoaderEditor": "UE4Editor-JsonDBConfigLoaderEditor.dll"
-	}
-}
