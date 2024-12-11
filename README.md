@@ -1,93 +1,103 @@
-# JsonDBConfigLoader_Unreal_Plugin
+# JsonDBConfigLoader Plugin
 
+## Overview
 
+**JsonDBConfigLoader** is a plugin for Unreal Engine that simplifies the management of database connection configurations. It allows developers to load, edit, and save `.json` files containing database connection details (e.g., `username`, `password`, `hostname`, `port`, etc.) into an Unreal Engine **Data Table** for runtime usage. The plugin also includes a user-friendly GUI for managing `.json` files and database configurations directly within the Unreal Editor.
 
-## Getting started
+## Features
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+1. **Load JSON to Data Table**  
+   - Import `.json` files containing database connection information into an Unreal Engine Data Table.  
+   - Streamlines runtime usage of database configurations without reading `.json` files during gameplay.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+2. **Manage JSON Files via GUI**  
+   - View a list of `.json` files and their contents within the plugin's GUI.  
+   - Add, remove, or edit `.json` files directly from the interface.
 
-## Add your files
+3. **Edit Database Configurations**  
+   - Modify database connection details in the GUI, including fields like `username`, `password`, `hostname`, etc.  
+   - Save edited configurations directly into the Data Table or back into a `.json` file.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+4. **Save Data to JSON**  
+   - Export database connection configurations from the GUI to `.json` files for external usage or backup.
 
-```
-cd existing_repo
-git remote add origin http://git.kohtnas.com/publicgroup/jsondbconfigloader.git
-git branch -M main
-git push -uf origin main
-```
+5. **User-Friendly Interface**  
+   - A straightforward and responsive GUI designed for efficiency, making database configuration management easy.
 
-## Integrate with your tools
-
-- [ ] [Set up project integrations](http://git.kohtnas.com/publicgroup/jsondbconfigloader/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+---
 
 ## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+
+1. **Clone or Download the Repository**  
+   Clone the plugin repository into your Unreal Engine project `Plugins/` folder:  
+   ```bash
+   git clone https://github.com/<your-repository>/JsonDBConfigLoader.git
+   ```
+
+2. **Enable the Plugin**  
+   - Open your Unreal Engine project.  
+   - Navigate to `Edit > Plugins`.  
+   - Search for "JsonDBConfigLoader" and enable it.  
+   - Restart the editor if prompted.
+
+3. **Dependencies**  
+   Ensure your project has the **Json Utilities** module enabled for parsing `.json` files.
+
+---
 
 ## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+1. **Access the Plugin's Tab**  
+   - Open the **JsonDBConfigLoader** tab from the `Window > JsonDBConfigLoader` menu.
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+2. **Load a JSON File**  
+   - Click the **Add** button in the GUI to browse for a `.json` file.  
+   - The file will be added to the list and displayed in the GUI.
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+3. **Edit JSON Data**  
+   - Select a file from the list.  
+   - Modify the database connection details directly in the editable fields.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+4. **Save Changes**  
+   - Save changes to a Data Table by clicking the **Save to Data Table** button.  
+   - Alternatively, save changes back to the `.json` file using the **Save to File** button.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+5. **Create New JSON**  
+   - Use the **Create** button to define a new database configuration.  
+   - Add fields like `username`, `password`, etc., and save it to a new `.json` file.
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+---
+
+## Example JSON Format
+
+Below is an example of a `.json` file that the plugin can handle:
+
+```json
+{
+    "DatabaseConfig": {
+        "Username": "admin",
+        "Password": "password123",
+        "Hostname": "127.0.0.1",
+        "Port": 5432,
+        "DatabaseName": "GameDB"
+    }
+}
+```
+
+---
+
+## Contributions
+
+Contributions, issues, and feature requests are welcome! Feel free to open an issue or submit a pull request on GitHub.
+
+---
 
 ## License
-For open source projects, say how it is licensed.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
+
+---
+
+## Support
+
+For questions or support, please contact [kongphai_wutt@outlook.co.th] or open an issue on the GitHub repository.
