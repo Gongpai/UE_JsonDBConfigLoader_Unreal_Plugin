@@ -79,13 +79,11 @@ Below is an example of a `.json` file that the plugin can handle:
 
 ```json
 {
-    "DatabaseConfig": {
-        "Username": "admin",
-        "Password": "password123",
-        "Hostname": "127.0.0.1",
-        "Port": 5432,
-        "DatabaseName": "GameDB"
-    }
+   "Hostname": "127.0.0.1",
+   "Username": "admin",
+   "Password": "password123",
+   "Port": 5432,
+   "DatabaseName": "GameDB"
 }
 ```
 
