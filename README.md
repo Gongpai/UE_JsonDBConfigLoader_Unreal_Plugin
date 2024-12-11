@@ -1,4 +1,4 @@
-# JsonDBConfigLoader Plugin
+# JsonDBConfigLoader Unreal Engine Plugin
 
 ## Overview
 
