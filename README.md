@@ -31,7 +31,7 @@
 1. **Clone or Download the Repository**  
    Clone the plugin repository into your Unreal Engine project `Plugins/` folder:  
    ```bash
-   git clone https://github.com/<your-repository>/JsonDBConfigLoader.git
+   git clone https://github.com/Gongpai/UE_JsonDBConfigLoader_Unreal_Plugin.git
    ```
 
 2. **Enable the Plugin**  
