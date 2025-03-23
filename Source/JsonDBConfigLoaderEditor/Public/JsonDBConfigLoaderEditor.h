@@ -58,7 +58,8 @@ private:
 	FFileInfo* CurrentFileInfo = nullptr;
 	FDatabaseInfo* CurrentDatabaseInfo = nullptr;
 	FLinearColor SelectColor = FLinearColor(0.00304, 0.31896, 0.14444, 1);
-	FLinearColor HideColor = FLinearColor(0, 0, 0, 0);
+	FLinearColor UnsavedIndicatorShowColor = FLinearColor(0, 0, 0, 0);
+	FLinearColor UnsavedIndicatorHideColor = FLinearColor(0, 0, 0, 0);
 	UDataTable* CurrentDataTable;
 	FString CurrentDataTablePath;
 	

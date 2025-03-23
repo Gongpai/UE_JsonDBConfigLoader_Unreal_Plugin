@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0",
+	"VersionName": "1.0.1",
 	"FriendlyName": "JsonDBConfigLoader",
 	"Description": "A plugin that reads database connection information from a JSON file and stores it in Unreal Engine's runtime environment, allowing seamless database access without relying on external configuration files after the game is built.",
 	"Category": "Other",
