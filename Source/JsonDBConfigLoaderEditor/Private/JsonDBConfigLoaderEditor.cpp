@@ -328,12 +328,12 @@ TSharedRef<SDockTab> FJsonDBConfigLoaderEditorModule::OnSpawnPluginTab(const FSp
 											CurrentDatabaseInfo->Port,
 											CurrentDatabaseInfo->DatabaseName)))
 											{
-												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(FLinearColor::Black);
+												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(UnsavedIndicatorShowColor);
 												CurrentFileInfo->IsEdit = true;
 											}
 											else
 											{
-												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(HideColor);
+												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(UnsavedIndicatorHideColor);
 												CurrentFileInfo->IsEdit = false;
 											}
 										}
@@ -365,12 +365,12 @@ TSharedRef<SDockTab> FJsonDBConfigLoaderEditorModule::OnSpawnPluginTab(const FSp
 											CurrentDatabaseInfo->Port,
 											CurrentDatabaseInfo->DatabaseName)))
 											{
-												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(FLinearColor::Black);
+												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(UnsavedIndicatorShowColor);
 												CurrentFileInfo->IsEdit = true;
 											}
 											else
 											{
-												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(HideColor);
+												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(UnsavedIndicatorHideColor);
 												CurrentFileInfo->IsEdit = false;
 											}
 										}
@@ -403,12 +403,12 @@ TSharedRef<SDockTab> FJsonDBConfigLoaderEditorModule::OnSpawnPluginTab(const FSp
 											CurrentDatabaseInfo->Port,
 											CurrentDatabaseInfo->DatabaseName)))
 											{
-												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(FLinearColor::Black);
+												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(UnsavedIndicatorShowColor);
 												CurrentFileInfo->IsEdit = true;
 											}
 											else
 											{
-												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(HideColor);
+												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(UnsavedIndicatorHideColor);
 												CurrentFileInfo->IsEdit = false;
 											}
 										}
@@ -440,12 +440,12 @@ TSharedRef<SDockTab> FJsonDBConfigLoaderEditorModule::OnSpawnPluginTab(const FSp
 											NewText.ToString(),
 											CurrentDatabaseInfo->DatabaseName)))
 											{
-												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(FLinearColor::Black);
+												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(UnsavedIndicatorShowColor);
 												CurrentFileInfo->IsEdit = true;
 											}
 											else
 											{
-												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(HideColor);
+												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(UnsavedIndicatorHideColor);
 												CurrentFileInfo->IsEdit = false;
 											}
 										}
@@ -477,18 +477,35 @@ TSharedRef<SDockTab> FJsonDBConfigLoaderEditorModule::OnSpawnPluginTab(const FSp
 											CurrentDatabaseInfo->Port,
 											NewText.ToString())))
 											{
-												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(FLinearColor::Black);
+												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(UnsavedIndicatorShowColor);
 												CurrentFileInfo->IsEdit = true;
 											}
 											else
 											{
-												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(HideColor);
+												ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(UnsavedIndicatorHideColor);
 												CurrentFileInfo->IsEdit = false;
 											}
 										}
 											
 										CurrentDatabaseInfo->DatabaseName = NewText.ToString();
 									})
+								]
+							]
+							
+							+ SVerticalBox::Slot()
+							.AutoHeight()
+							[
+								SNew(SBox)
+								.HeightOverride(30)
+								.WidthOverride(150)
+								.HAlign(HAlign_Left)
+								.VAlign(VAlign_Center)
+								[
+									SNew(SButton)
+									.HAlign(HAlign_Center)
+									.VAlign(VAlign_Center)
+									.Text(FText::FromString("Clear Config"))
+									.OnClicked_Raw(this, &FJsonDBConfigLoaderEditorModule::OnButtonClearConfig)
 								]
 							]
 							
@@ -611,20 +628,6 @@ TSharedRef<SDockTab> FJsonDBConfigLoaderEditorModule::OnSpawnPluginTab(const FSp
 							.VAlign(VAlign_Center)
 							.Text(FText::FromString("Clear List"))
 							.OnClicked_Raw(this, &FJsonDBConfigLoaderEditorModule::OnButtonClearList)
-						]
-					]
-					
-					+ SHorizontalBox::Slot()
-					.AutoWidth()
-					[
-						SNew(SBox)
-						.WidthOverride(150)
-						[
-							SNew(SButton)
-							.HAlign(HAlign_Center)
-							.VAlign(VAlign_Center)
-							.Text(FText::FromString("Clear Config"))
-							.OnClicked_Raw(this, &FJsonDBConfigLoaderEditorModule::OnButtonClearConfig)
 						]
 					]
 					
@@ -799,7 +802,7 @@ void FJsonDBConfigLoaderEditorModule::ClearConfig()
 	{
 		CurrentFileInfo->IsLoad = false;
 		TSharedPtr<FButtonInfo> ButtonInfo = JsonButtonLists[CurrentFileInfo->FileName];
-		ButtonInfo->SelectBar.ToSharedRef()->SetBorderBackgroundColor(HideColor);
+		ButtonInfo->SelectBar.ToSharedRef()->SetBorderBackgroundColor(UnsavedIndicatorHideColor);
 		CurrentPathText->SetText(FText::FromString("Path : "));
 	}
     
@@ -903,7 +906,7 @@ void FJsonDBConfigLoaderEditorModule::OnSetCurrentJson(FString* FileName)
 	{
 		CurrentFileInfo->IsLoad = false;
 		TSharedPtr<FButtonInfo> ButtonInfo = JsonButtonLists[CurrentFileInfo->FileName];
-		ButtonInfo->SelectBar.ToSharedRef()->SetBorderBackgroundColor(HideColor);
+		ButtonInfo->SelectBar.ToSharedRef()->SetBorderBackgroundColor(UnsavedIndicatorHideColor);
 		CurrentPathText->SetText(FText::FromString("Path : "));
 	}
 
@@ -957,7 +960,7 @@ void FJsonDBConfigLoaderEditorModule::OnSaveJson()
 	}else
 	{
 		TSharedPtr<FButtonInfo> ButtonInfo = JsonButtonLists[CurrentFileInfo->FileName];
-		ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(HideColor);
+		ButtonInfo->UnsavedIndicator.ToSharedRef()->SetColorAndOpacity(UnsavedIndicatorHideColor);
 		JsonDBCLManager->DatabaseInfos[CurrentFileInfo->FileName].Value.ApplyBaseDataInfo();
 		UJsonDBConfigLoaderEditorManager::SaveJsonDBConfig(CurrentFileInfo->FilePath, *CurrentDatabaseInfo);
 	}
@@ -978,12 +981,12 @@ TSharedRef<FButtonInfo> FJsonDBConfigLoaderEditorModule::JsonFileButton(FString 
 	TSharedPtr<SBorder> SelectBar = SNew(SBorder)
 	.Padding(0)
 	.BorderImage(FCoreStyle::Get().GetBrush("WhiteBrush"))
-	.BorderBackgroundColor(HideColor);
+	.BorderBackgroundColor(UnsavedIndicatorHideColor);
 	
 	TSharedPtr<STextBlock> UnsavedIndicator = SNew(STextBlock)
 	.Text(FText::FromString("*"))
 	.Justification(ETextJustify::Center)
-	.ColorAndOpacity(FileInfo.IsEdit ? FLinearColor::Black : HideColor)
+	.ColorAndOpacity(FileInfo.IsEdit ? UnsavedIndicatorShowColor : UnsavedIndicatorHideColor)
 	.Font(FSlateFontInfo(FCoreStyle::GetDefaultFontStyle("Bold", 12.0f)));
 	
 	TSharedPtr<SHorizontalBox> HorizontalBox = SNew(SHorizontalBox)
