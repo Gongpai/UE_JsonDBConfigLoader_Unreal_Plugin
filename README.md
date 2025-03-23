@@ -5,8 +5,8 @@
 **JsonDBConfigLoader** is a plugin for Unreal Engine that simplifies the management of database connection configurations. It allows developers to load, edit, and save `.json` files containing database connection details (e.g., `username`, `password`, `hostname`, `port`, etc.) into an Unreal Engine **Data Table** for runtime usage. The plugin also includes a user-friendly GUI for managing `.json` files and database configurations directly within the Unreal Editor.
 
 ## Screenshot
-![Screenshot 2024-12-09 132412](https://github.com/user-attachments/assets/c2a4cb36-195d-41a0-9454-1e837fd1dd11)
-![Screenshot 2024-12-09 132350](https://github.com/user-attachments/assets/81330f01-af2e-4419-91d7-ba66f4770147)
+![Screenshot 2025-03-23 150520](https://github.com/user-attachments/assets/d27d936d-e780-4aaa-980e-cfa6dc3c3f95)
+![Screenshot 2025-03-23 150445](https://github.com/user-attachments/assets/f490cef0-3c79-42dc-8bd6-bfd8a54d8675)
 
 
 ## Features
