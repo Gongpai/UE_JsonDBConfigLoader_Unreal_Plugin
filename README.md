@@ -97,7 +97,7 @@ Contributions, issues, and feature requests are welcome! Feel free to open an is
 
 ## License
 
-[![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](http://creativecommons.org/licenses/by/4.0/)
+![Static Badge](https://img.shields.io/badge/License-MIT-blue?style=flat&logo=copyright)
 
 ---
 
