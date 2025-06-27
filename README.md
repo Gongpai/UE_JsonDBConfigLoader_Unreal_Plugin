@@ -97,7 +97,7 @@ Contributions, issues, and feature requests are welcome! Feel free to open an is
 
 ## License
 
-![Static Badge](https://img.shields.io/badge/License-MIT-blue?style=flat&logo=copyright)
+![Static Badge](https://img.shields.io/badge/License-MIT-blue?style=flat&logo=copyright&link=https%3A%2F%2Fmit-license.org%2F)
 
 ---
 
